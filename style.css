@@ -98,3 +98,55 @@ main{
     margin:0;
     color:#666;
 }
+
+/* ===== Stories ===== */
+
+.stories{
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    padding:20px 0;
+    margin-bottom:25px;
+}
+
+.stories::-webkit-scrollbar{
+    display:none;
+}
+
+.story{
+    text-align:center;
+    min-width:70px;
+}
+
+.story-circle{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#F8BBD9,#E88DB5);
+    padding:3px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+}
+
+.story-circle::after{
+    content:"";
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background:white;
+    display:block;
+}
+
+.add-story .story-circle{
+    color:white;
+    font-size:34px;
+    font-weight:bold;
+}
+
+.story p{
+    margin-top:8px;
+    font-size:14px;
+    color:#555;
+}
