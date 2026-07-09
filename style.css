@@ -25,3 +25,55 @@ p{
     font-size:18px;
     color:#666;
 }
+
+/* ===== Header ===== */
+
+header{
+    background:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+header h1{
+    margin:0;
+    text-align:center;
+    color:#E88DB5;
+    font-size:36px;
+}
+
+header input{
+    width:100%;
+    margin-top:18px;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#F6F6F6;
+    font-size:16px;
+    outline:none;
+}
+
+/* ===== Accueil ===== */
+
+main{
+    padding:20px;
+}
+
+.welcome{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.welcome h2{
+    color:#E88DB5;
+    margin-bottom:12px;
+}
+
+.welcome p{
+    margin:0;
+    color:#666;
+}
