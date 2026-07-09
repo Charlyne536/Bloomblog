@@ -152,3 +152,18 @@ main{
     font-size:14px;
     color:#555;
 }
+
+/* ===== Bannière ===== */
+
+.hero{
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:25px;
+    display:block;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
