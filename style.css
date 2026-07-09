@@ -1,0 +1,27 @@
+/* 🌸 Sakuria - Version 0.0.1 */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#FFF8FB;
+    color:#333;
+}
+
+h1{
+    text-align:center;
+    margin-top:25px;
+    color:#E88DB5;
+    font-size:42px;
+}
+
+p{
+    text-align:center;
+    margin-top:15px;
+    font-size:18px;
+    color:#666;
+}
