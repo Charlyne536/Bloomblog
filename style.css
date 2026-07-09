@@ -38,9 +38,30 @@ header{
 
 header h1{
     margin:0;
-    text-align:center;
     color:#E88DB5;
-    font-size:36px;
+    font-size:34px;
+    font-weight:700;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.notif-btn{
+    background:#F8BBD9;
+    border:none;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    font-size:20px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.notif-btn:hover{
+    transform:scale(1.05);
 }
 
 header input{
