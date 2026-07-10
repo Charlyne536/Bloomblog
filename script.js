@@ -9,11 +9,7 @@ console.log("Bienvenue sur Sakuria 🌸");
 const publishButton = document.getElementById("publish");
 
 if (publishButton) {
-
     publishButton.addEventListener("click", function () {
-
-        alert("🎉 Publication créée !");
-
+        alert("🌸 Le bouton Publier fonctionne !");
     });
-
 }
