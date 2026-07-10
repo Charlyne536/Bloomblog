@@ -9,7 +9,21 @@ console.log("Bienvenue sur Sakuria 🌸");
 const publishButton = document.getElementById("publish");
 
 if (publishButton) {
+
     publishButton.addEventListener("click", function () {
-        alert("🌸 Le bouton Publier fonctionne !");
+
+        const media = document.getElementById("media");
+        const caption = document.getElementById("caption");
+
+        const hasMedia = media.files.length > 0;
+        const hasText = caption.value.trim() !== "";
+
+        if (!hasMedia && !hasText) {
+            alert("🌸 Ajoute une photo, une vidéo ou écris un texte avant de publier.");
+            return;
+        }
+
+        alert("🎉 Publication prête !");
     });
+
 }
