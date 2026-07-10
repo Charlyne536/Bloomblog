@@ -314,3 +314,29 @@ main{
 .conversation:hover{
     background:#FCEAF3;
 }
+
+textarea{
+    width:100%;
+    border:none;
+    border-radius:15px;
+    padding:15px;
+    background:#f8f8f8;
+    resize:none;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+input[type=file]{
+    width:100%;
+}
+
+.publish-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:#E88DB5;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+}
