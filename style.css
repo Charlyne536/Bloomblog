@@ -260,3 +260,26 @@ main{
 .bottom-nav a:hover{
     color:#E88DB5;
 }
+
+/* ===== Actions de publication ===== */
+
+.post-actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.bookmark{
+    margin-left:auto;
+}
+
+.post-actions i{
+    cursor:pointer;
+    transition:.2s;
+}
+
+.post-actions i:hover{
+    color:#E88DB5;
+}
