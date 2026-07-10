@@ -220,3 +220,35 @@ main{
     font-size:15px;
     color:#444;
 }
+
+/* ===== Barre de navigation ===== */
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:14px 0;
+    box-shadow:0 -3px 12px rgba(0,0,0,.08);
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.bottom-nav a{
+    color:#888;
+    font-size:22px;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.bottom-nav a.active{
+    color:#E88DB5;
+}
+
+.bottom-nav a:hover{
+    color:#E88DB5;
+}
