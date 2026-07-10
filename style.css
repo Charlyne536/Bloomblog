@@ -265,16 +265,20 @@ main{
 
 .post-actions{
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    gap:28px;
-    font-size:24px;
-    margin:15px 0;
-    padding:0 5px;
+    margin:18px 0;
+    padding:0 8px;
 }
 
-.bookmark{
-    margin-left:auto;
-    font-size:24px;
+.post-actions i{
+    font-size:28px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.post-actions i:hover{
+    color:#E88DB5;
 }
 
 .post-actions i{
