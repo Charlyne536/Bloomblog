@@ -23,7 +23,14 @@ if (publishButton) {
             return;
         }
 
-        alert("🎉 Publication prête !");
+        const publication = {
+    texte: caption.value,
+    date: new Date().toLocaleString()
+};
+
+localStorage.setItem("dernierePublication", JSON.stringify(publication));
+
+window.location.href = "index.html";
     });
 
 }
