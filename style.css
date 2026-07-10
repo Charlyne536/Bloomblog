@@ -286,6 +286,16 @@ main{
     transition:.2s;
 }
 
+.post-actions i{
+    font-size:28px;
+    cursor:pointer;
+    transition:all .2s ease;
+    padding:10px;
+    border-radius:50%;
+}
+
 .post-actions i:hover{
     color:#E88DB5;
+    background:#FCEAF3;
+    transform:scale(1.1);
 }
