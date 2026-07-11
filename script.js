@@ -3,7 +3,6 @@
 
 console.log("Bienvenue sur Sakuria 🌸");
 
-localStorage.clear();
 
 function tempsEcoule(date) {
 
