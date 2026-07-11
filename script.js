@@ -34,3 +34,23 @@ window.location.href = "index.html";
     });
 
 }
+
+const zonePublications = document.getElementById("publications");
+
+if (zonePublications) {
+
+    const publication = JSON.parse(localStorage.getItem("dernierePublication"));
+
+    if (publication) {
+
+        zonePublications.innerHTML = `
+            <section class="post">
+                <h3>🌸 Toi</h3>
+                <p>${publication.texte}</p>
+                <small>${publication.date}</small>
+            </section>
+        `;
+
+    }
+
+}
