@@ -44,18 +44,25 @@ const zonePublications = document.getElementById("publications");
 
 if (zonePublications) {
 
-    const publication = JSON.parse(localStorage.getItem("dernierePublication"));
+    const publications = JSON.parse(localStorage.getItem("publications")) || [];
 
-    if (publication) {
+    publications.forEach(publication => {
 
-        zonePublications.innerHTML = `
+        zonePublications.innerHTML += `
             <section class="post">
-                <h3>🌸 Toi</h3>
-                <p>${publication.texte}</p>
-                <small>${publication.date}</small>
+
+                <div class="post-header">
+                    <strong>🌸 Toi</strong>
+                    <p>${publication.date}</p>
+                </div>
+
+                <div class="post-content">
+                    ${publication.texte}
+                </div>
+
             </section>
         `;
 
-    }
+    });
 
 }
