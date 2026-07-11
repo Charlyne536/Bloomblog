@@ -3,6 +3,8 @@
 
 console.log("Bienvenue sur Sakuria 🌸");
 
+localStorage.clear();
+
 function tempsEcoule(date) {
 
     const secondes = Math.floor((Date.now() - date) / 1000);
