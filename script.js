@@ -3,6 +3,27 @@
 
 console.log("Bienvenue sur Sakuria 🌸");
 
+function tempsEcoule(date) {
+
+    const secondes = Math.floor((Date.now() - date) / 1000);
+
+    if (secondes < 60) return "À l'instant";
+
+    const minutes = Math.floor(secondes / 60);
+
+    if (minutes < 60) return `Il y a ${minutes} min`;
+
+    const heures = Math.floor(minutes / 60);
+
+    if (heures < 24) return `Il y a ${heures} h`;
+
+    const jours = Math.floor(heures / 24);
+
+    if (jours === 1) return "Hier";
+
+    return `Il y a ${jours} jours`;
+
+}
 
 // ==============================
 // PUBLIER UNE PUBLICATION
@@ -28,7 +49,7 @@ if (publishButton) {
 
         const publication = {
             texte: caption.value,
-            date: new Date().toLocaleString()
+            date: Date.now()
         };
 
         // On récupère les anciennes publications
@@ -69,7 +90,7 @@ if (zonePublications) {
 
                 <div class="post-info">
                     <strong>Vous</strong>
-                    <p>${publication.date}</p>
+                    <p>${tempsEcoule(publication.date)}</p>
                 </div>
 
             </div>
