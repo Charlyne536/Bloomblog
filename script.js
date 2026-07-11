@@ -28,12 +28,17 @@ if (publishButton) {
     date: new Date().toLocaleString()
 };
 
-localStorage.setItem("dernierePublication", JSON.stringify(publication));
+// On récupère les anciennes publications
+let publications = JSON.parse(localStorage.getItem("publications")) || [];
 
+// On ajoute la nouvelle au début
+publications.unshift(publication);
+
+// On enregistre la liste
+localStorage.setItem("publications", JSON.stringify(publications));
+
+// Retour à l'accueil
 window.location.href = "index.html";
-    });
-
-}
 
 const zonePublications = document.getElementById("publications");
 
